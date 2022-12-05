@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Card</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+
+        .avata_perfil {
+            width: 80px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #f1f1f1 !important;
+        }
+
+        .credencial .avata_perfil {
+            width: 152px !important;
+        }
+
+        .mdl-layout__container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mdl-layout__content .linha {
+            display: flex;
+            padding: 3% 5%;
+        }
+
+        .b_t2 {
+            border-top: 2px solid #fff;
+        }
+
+        .mdl-layout__content .linha div:last-child {
+            padding-right: 0px !important;
+        }
+
+        .mdl-layout__content .linha div:not(.ex) {
+            padding-right: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .t100 {
+            width: 100% !important;
+        }
+
+        .esq {
+            float: left;
+        }
+
+        .s28 {
+            font-size: 28px;
+        }
+
+        .credencial .linha_unidade_divisoria {
+            position: absolute;
+            width: 100%;
+            bottom: 304px;
+            height: 4px;
+        }
+
+        .credencial .linha_qrcode_divisoria {
+            position: absolute;
+            width: 100%;
+            bottom: 70px;
+            height: 4px;
+        }
+
+        .cor_bg7 {
+            background-color: rgb(97 61 175 / 70%);
+        }
+
+        .mdl-layout {
+            width: 100%;
+            height: 100%;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            -webkit-overflow-scrolling: touch;
+            background-color: thistle;
+        }
+
+        .mdl-layout--fixed-header > .mdl-layout__header {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div id="ctl00_ContentPlaceHolder1_uppTitulo">
+            </div>
+        </header>
+
+        <div class="mdl-layout__content" style="margin-top: 0px !important;">
+
+
+            <div class="credencial center">
+
+                <div class="linha">
+                    <div class="esq t100 center" style="margin-top:60px;">
+                        <img id="ctl00_ContentPlaceHolder1_imgFotoPessoa" class="avata_perfil" src="imagens/fotoLari.jpg" style="border-width:0px;" />
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="esq t100 center s28" style="line-height: 30px;">
+                        Larissa Alves
+                    </div>
+                </div>
+
+                <div class="linha_unidade_divisoria cor_bg7"></div>
+
+                <div class="linha" style="position: absolute; width: 100%; bottom: 180px;">
+                    <section class="linha">
+                        <a href="https://www.facebook.com/Lalii.alves" target="_blank" style="height:60px;width:60px;">
+                            <div>
+                                <img src="imagens/facebook.png" style="height:60px;width:60px;" alt="Facebook.">
+                            </div>
+                        </a>
+
+                        <div style="position: absolute;width: 70%;bottom: 45px; margin-left: 70px;">
+                            Entrar em contato pelo Facebook
+                        </div>
+                    </section>
+                </div>
+
+                <div class="linha" style="position: absolute; width: 100%; bottom: 90px;">
+                    <section class="linha">
+
+                        <a href="https://api.whatsapp.com/send?phone=5541991325989&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" style="height:60px;width:60px;" target="_blank">
+                            <div>
+                                <img src="imagens/whatsapp2.png" style="height:60px;width:60px;" alt="Whastapp.">
+                            </div>
+                        </a>
+                        <div style="position: absolute;width: 70%;bottom: 45px;margin-left:70px;">
+                            Entrar em contato pelo Whastapp
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="linha_qrcode_divisoria cor_bg7"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
